@@ -1,11 +1,11 @@
 server:
-  port: 38080
+  port: 38082
 
 spring:
   cloud:
     stream:
       bindings:
-        output:
+        input:
           destination: 'etl-data'
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
