@@ -11,6 +11,7 @@ A simple project to demonstrate how a Kafka stream can replace an ETL.
 1. Java 8
 2. Maven
 3. Docker
+4. (Optional) Python if you want to prettify *curl* output
 
 ## How to
 
