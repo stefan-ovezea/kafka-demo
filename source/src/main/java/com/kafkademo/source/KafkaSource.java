@@ -33,7 +33,6 @@ public class KafkaSource {
 
     @GetMapping(value = "/send")
     public ResponseEntity<Void> send() throws  Exception {
-        Thread.sleep(1000);
         generateUsers().stream().forEach(this::emitRawUser);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
